@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="Gifsual_Studio_2.Tomasz Kaczmarczyk.4011d831-4dcc-4f54-bdc9-c0c444143107" Version="1.0" Language="en-US" Publisher="Tomasz Kaczmarczyk" />
     <DisplayName>Gifsual_Studio_2</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description xml:space="preserve">Makes image and gif links in code expand into actual images</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
