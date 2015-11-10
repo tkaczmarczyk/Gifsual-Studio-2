@@ -46,21 +46,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoteImageAdornment.cs" />
-    <Compile Include="TextAdornment1.cs" />
     <Compile Include="RemoteImageViewCreationListener.cs" />
-    <Compile Include="TextAdornment1TextViewCreationListener.cs" />
-    <Compile Include="ViewportAdornment1.cs" />
-    <Compile Include="ViewportAdornment1TextViewCreationListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="index.html" />
-    <Content Include="stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework" />

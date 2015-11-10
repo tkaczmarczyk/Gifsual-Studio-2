@@ -16,6 +16,10 @@ using Microsoft.VisualStudio.Text.Operations;
 
 namespace Gifsual_Studio_2
 {
+
+    //Instead of writing good documentation, I will explain everything in the medium of gifs
+    //http://38.media.tumblr.com/2981450f1ee3d75d5feb389d8a1bb014/tumblr_inline_nshd51g5eN1raprkq_500.gif
+
     internal sealed class RemoteImageAdornment
     {
         /// <summary>
@@ -34,7 +38,7 @@ namespace Gifsual_Studio_2
         public const double MarginTop = 10;
         public const double MaxWidth = 500;
         public const double MaxHeight = 500;
-        public const double IdleOpacity = 0.3;
+        public const double IdleOpacity = 0.15;
         public const double FocusedOpacity = 0.6;
 
         private List<MediaElement> _renderedImages = new List<MediaElement>();
@@ -81,6 +85,9 @@ namespace Gifsual_Studio_2
                     var url = match.Value;
                     foreach (var image in _renderedImages.Where(r => r.Source.AbsoluteUri == url))
                     {
+                        //It is now critical that I paste this URL: 
+                        //http://33.media.tumblr.com/9623d4ab00c74f027e6cd1e23e1d5126/tumblr_inline_nshd2hgJNy1raprkq_500.gif
+
                         image.Opacity = FocusedOpacity;
                         _currentFocusedImages.Add(image);
                     }
